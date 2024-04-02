@@ -1,0 +1,202 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "VYIJuzjC4ElA3Bvoajwuv",
+      "name": "Rosewater",
+      "value": "#f5e0dc"
+    },
+    {
+      "id": "JpuZd-mz-teiSMUcsb0AD",
+      "name": "Flamingo",
+      "value": "#f2cdcd"
+    },
+    {
+      "id": "bjGcNGwfUPS1GqTkHCe-8",
+      "name": "Pink",
+      "value": "#f5c2e7"
+    },
+    {
+      "id": "lzWhiANvETMfsIoTrdFB9",
+      "name": "Mauve",
+      "value": "#cba6f7"
+    },
+    {
+      "id": "4axxsmNQRE0k1SXm8rm2F",
+      "name": "Red",
+      "value": "#f38ba8"
+    },
+    {
+      "id": "7cIQYQdhXWzPinlYeMin3",
+      "name": "Maroon",
+      "value": "#eba0ac"
+    },
+    {
+      "id": "0BFRCPk9lFMywnZOsgIQf",
+      "name": "Peach",
+      "value": "#fab387"
+    },
+    {
+      "id": "HwxO3RRLWIMd-TNnStICl",
+      "name": "Yellow",
+      "value": "#f9e2af"
+    },
+    {
+      "id": "ThRU2Fxf2wCAGKseZAhWc",
+      "name": "Green",
+      "value": "#a6e3a1"
+    },
+    {
+      "id": "pnLmXIoHLQF21FkYggt8u",
+      "name": "Teal",
+      "value": "#89dceb"
+    },
+    {
+      "id": "JBnFpl5magEV9CsZB2tSU",
+      "name": "Sky",
+      "value": "#89dceb"
+    },
+    {
+      "id": "aYbA9jvWeLtu_mWIMiqKe",
+      "name": "Sapphire",
+      "value": "#74c7ec"
+    },
+    {
+      "id": "tSlH876wpNR5tE9B95v7C",
+      "name": "Blue",
+      "value": "#89b4fa"
+    },
+    {
+      "id": "_4T0sNO5kSwE4w7ujbLJ5",
+      "name": "Lavender",
+      "value": "#b4befe"
+    },
+    {
+      "id": "5E6YzI2gunVeo7rPEBCOk",
+      "name": "Text",
+      "value": "#cdd6f4"
+    },
+    {
+      "id": "nJyyKPc1Y7rtT-jluC4qE",
+      "name": "Base",
+      "value": "#1e1e2e"
+    },
+    {
+      "id": "bDGa4yumDKjVNgCsHu9g3",
+      "name": "Mantle",
+      "value": "#191927"
+    },
+    {
+      "id": "BfJiJyvYHzGsKVP-KUqFR",
+      "name": "Crust",
+      "value": "#11111b"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "To Be Sorted",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "Daily Notes",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "3D Printing",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Woodworking",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Tools",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Audiophile",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Everyday Carry",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Workstation",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Entertainment",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Travel",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Fashion",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Life",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Recipies",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Sports",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Finance",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Government",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Health",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Housing",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Cars",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Education",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Employment",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Interview Preparation",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Learning Resources",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Obsidian",
+      "color": "JBnFpl5magEV9CsZB2tSU"
+    },
+    {
+      "path": "Interpersonal",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "Readwise",
+      "color": "VYIJuzjC4ElA3Bvoajwuv"
+    }
+  ]
+}

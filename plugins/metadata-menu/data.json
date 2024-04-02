@@ -1,0 +1,39 @@
+{
+  "presetFields": [
+    {
+      "name": "status",
+      "options": {},
+      "id": "1",
+      "type": "Input"
+    }
+  ],
+  "fileClassQueries": [],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [],
+  "classFilesPath": "Obsidian/FileClasses/",
+  "isAutosuggestEnabled": true,
+  "fileClassAlias": "fileClass",
+  "settingsVersion": "5.0",
+  "globalFileClass": "Default",
+  "firstDayOfWeek": 0,
+  "enableLinks": false,
+  "enableTabHeader": true,
+  "enableEditor": true,
+  "enableBacklinks": false,
+  "enableStarred": false,
+  "enableFileExplorer": false,
+  "enableSearch": false,
+  "enableProperties": true,
+  "buttonIcon": "file-check",
+  "tableViewMaxRecords": 100,
+  "frontmatterListDisplay": "asArray",
+  "fileClassExcludedFolders": [],
+  "showIndexingStatusInStatusBar": true,
+  "fileIndexingExcludedFolders": [],
+  "fileIndexingExcludedExtensions": [
+    ".excalidraw.md"
+  ],
+  "fileIndexingExcludedRegex": [],
+  "frontmatterOnly": false,
+  "showFileClassSelectInModal": true
+}

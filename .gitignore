@@ -10,7 +10,10 @@ workspaces.json
 workspace.json
 workspace-mobile.json
 workspace
+
+# Plugins that cannot be synced due to API keys or other personal information
 plugins/readwise-official
+plugins/obsidian-map-view
 
 
 # From Github Actions Template

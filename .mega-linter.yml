@@ -13,7 +13,7 @@ DISABLE_LINTERS:
   - PYTHON_PYRIGHT
   - SPELL_CSPELL
   - SPELL_LYCHEE
-  - REPOSITORY_TRUFFLEHOG # TODO: Re-enable trufflehog after https://github.com/trufflesecurity/trufflehog/issues/2515
+  - REPOSITORY_GRYPE # Renable if you have container images
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 VALIDATE_ALL_CODEBASE: true
@@ -24,3 +24,9 @@ FILTER_REGEX_EXCLUDE:
   # Lint snippets because they typically remain fairly static
 
 ANSIBLE_ANSIBLE_LINT_CONFIG_FILE: LINTER_DEFAULT
+
+# Gitleaks sees some hashes as aws-access-tokens even though they are not
+# Keep the linter as warnings though because it does find other api key leaks
+REPOSITORY_GITLEAKS_DISABLE_ERRORS: true
+REPOSITORY_TRUFFLEHOG_ARGUMENTS:
+  --exclude-paths=".git/config"

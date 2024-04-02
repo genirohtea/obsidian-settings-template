@@ -1,0 +1,12 @@
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+background-color: var(--file-color-color);
+color: rgba(30, 30, 46, 1);
+opacity: 0.85;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container :not(.mod-root) > .nav-folder-children > .nav-folder > :not(.nav-file-title).nav-folder-title {
+/*background-color: rgba(80, 170, 255, 0.03);*/
+/*border-style: dotted;*/
+/*border-width: 1px;*/
+border-color: var(--file-color-color);
+}

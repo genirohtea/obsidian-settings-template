@@ -20,5 +20,8 @@ VALIDATE_ALL_CODEBASE: true
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
 EXCLUDED_DIRECTORIES:
   - .github
+  - plugins
+  - themes
+  # Lint snippets because they typically remain fairly static
 
 ANSIBLE_ANSIBLE_LINT_CONFIG_FILE: LINTER_DEFAULT

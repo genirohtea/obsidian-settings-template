@@ -1,0 +1,9 @@
+{
+  "minimal-style@@h1-size": "1.25em",
+  "minimal-style@@h2-size": "1.125em",
+  "minimal-style@@h4-variant": "normal",
+  "minimal-style@@h5-variant": "normal",
+  "minimal-style@@h6-variant": "small-caps",
+  "minimal-advanced@@styled-scrollbars": true,
+  "minimal-style@@folding-offset": 32
+}

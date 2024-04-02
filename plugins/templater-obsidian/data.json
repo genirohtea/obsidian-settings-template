@@ -1,0 +1,39 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "Obsidian/Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "Obsidian/Template Scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Interpersonal/People",
+      "template": "Obsidian/Templates/People Template 2024.01.07.md"
+    },
+    {
+      "folder": "Interpersonal/Meetings",
+      "template": "Obsidian/Templates/Meeting Template 2023.05.14.md"
+    },
+    {
+      "folder": "Recipies/Coffee/Beans to Try",
+      "template": "Obsidian/Templates/Coffee Template 2024.01.13.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": true
+}

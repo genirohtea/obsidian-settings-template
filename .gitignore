@@ -21,3 +21,4 @@ build/
 logfile.log
 .vscode
 .idea
+megalinter-reports

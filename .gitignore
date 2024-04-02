@@ -1,0 +1,23 @@
+core-plugins-migration 2.json
+app 2.json
+appearance 2.json
+core-plugins 2.json
+cache
+todoist-token
+vault-stats.json
+workspace 2.json
+workspaces.json
+workspace.json
+workspace-mobile.json
+workspace
+plugins/readwise-official
+
+
+# From Github Actions Template
+temp/
+build/
+.DS_Store
+/*.env
+logfile.log
+.vscode
+.idea

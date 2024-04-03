@@ -1,1 +1,17 @@
-{"baseFontSize":16,"enabledPlugins":[],"pluginEnabledStatus":{"file-explorer":true,"global-search":true,"switcher":true,"graph":true,"backlink":true,"page-preview":true,"command-palette":true,"markdown-importer":true,"word-count":true,"open-with-default-app":true,"file-recovery":true}}
+{
+  "baseFontSize": 16,
+  "enabledPlugins": [],
+  "pluginEnabledStatus": {
+    "backlink": true,
+    "command-palette": true,
+    "file-explorer": true,
+    "file-recovery": true,
+    "global-search": true,
+    "graph": true,
+    "markdown-importer": true,
+    "open-with-default-app": true,
+    "page-preview": true,
+    "switcher": true,
+    "word-count": true
+  }
+}

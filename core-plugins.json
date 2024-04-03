@@ -1,17 +1,17 @@
 [
-  "file-explorer",
-  "global-search",
-  "switcher",
-  "graph",
+  "audio-recorder",
   "backlink",
+  "bookmarks",
   "canvas",
-  "tag-pane",
-  "properties",
   "command-palette",
   "editor-status",
-  "bookmarks",
-  "audio-recorder",
-  "workspaces",
+  "file-explorer",
   "file-recovery",
-  "sync"
+  "global-search",
+  "graph",
+  "properties",
+  "switcher",
+  "sync",
+  "tag-pane",
+  "workspaces"
 ]

@@ -28,5 +28,4 @@ ANSIBLE_ANSIBLE_LINT_CONFIG_FILE: LINTER_DEFAULT
 # Gitleaks sees some hashes as aws-access-tokens even though they are not
 # Keep the linter as warnings though because it does find other api key leaks
 REPOSITORY_GITLEAKS_DISABLE_ERRORS: true
-REPOSITORY_TRUFFLEHOG_ARGUMENTS:
-  --exclude-paths=".git/config"
+REPOSITORY_TRUFFLEHOG_ARGUMENTS: --exclude-paths=".git/config"

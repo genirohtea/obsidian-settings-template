@@ -1,12 +1,5 @@
 {
-  "presetFields": [
-    {
-      "name": "status",
-      "options": {},
-      "id": "1",
-      "type": "Input"
-    }
-  ],
+  "presetFields": [],
   "fileClassQueries": [],
   "displayFieldsInContextMenu": true,
   "globallyIgnoredFields": [],
@@ -16,7 +9,7 @@
   "settingsVersion": "5.0",
   "globalFileClass": "Default",
   "firstDayOfWeek": 0,
-  "enableLinks": false,
+  "enableLinks": true,
   "enableTabHeader": true,
   "enableEditor": true,
   "enableBacklinks": false,
@@ -24,7 +17,6 @@
   "enableFileExplorer": false,
   "enableSearch": false,
   "enableProperties": true,
-  "buttonIcon": "file-check",
   "tableViewMaxRecords": 100,
   "frontmatterListDisplay": "asArray",
   "fileClassExcludedFolders": [],
@@ -35,5 +27,10 @@
   ],
   "fileIndexingExcludedRegex": [],
   "frontmatterOnly": false,
-  "showFileClassSelectInModal": true
+  "showFileClassSelectInModal": true,
+  "chooseFileClassAtFileCreation": false,
+  "autoInsertFieldsAtFileClassInsertion": true,
+  "fileClassIcon": "package",
+  "isAutoCalculationEnabled": true,
+  "buttonIcon": "file-check"
 }

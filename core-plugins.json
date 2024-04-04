@@ -1,17 +1,16 @@
 [
-  "audio-recorder",
+  "file-explorer",
+  "global-search",
+  "switcher",
+  "graph",
   "backlink",
-  "bookmarks",
   "canvas",
+  "tag-pane",
+  "properties",
   "command-palette",
   "editor-status",
-  "file-explorer",
+  "bookmarks",
+  "audio-recorder",
   "file-recovery",
-  "global-search",
-  "graph",
-  "properties",
-  "switcher",
-  "sync",
-  "tag-pane",
-  "workspaces"
+  "sync"
 ]

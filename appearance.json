@@ -13,5 +13,6 @@
     "MySnippets",
     "folder-color-background",
     "[ui] Hide Vault Title in Left Sidebar"
-  ]
+  ],
+  "showViewHeader": true
 }

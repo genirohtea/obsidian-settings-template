@@ -26,6 +26,6 @@
   "tag-pane": true,
   "templates": false,
   "word-count": false,
-  "workspaces": true,
+  "workspaces": false,
   "zk-prefixer": false
 }

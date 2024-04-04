@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "migrated": 4,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FasCheck",
+      "FasPeopleGroup",
+      "FabThreads",
+      "FasPeopleArrows",
+      "FasList"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "emojiStyle": "none",
+    "iconInTabsEnabled": false,
+    "iconsBackgroundCheckEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":",
+    "iconsInLinksEnabled": true
+  }
+}

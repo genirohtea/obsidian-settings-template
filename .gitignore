@@ -15,9 +15,6 @@ workspace
 plugins/readwise-official
 plugins/obsidian-map-view
 plugins/remember-cursor-position/cursor-positions.json
-plugins/obsidian-file-color/data.json
-plugins/templater-obsidian/data.json
-plugins/obsidian-icon-folder/data.json
 
 # From Github Actions Template
 temp/

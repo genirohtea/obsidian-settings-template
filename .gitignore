@@ -14,7 +14,7 @@ workspace
 # Plugins that cannot be synced due to API keys or other personal information
 plugins/readwise-official
 plugins/obsidian-map-view
-
+plugins/remember-cursor-position/cursor-positions.json
 
 # From Github Actions Template
 temp/

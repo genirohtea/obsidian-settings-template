@@ -1,0 +1,13 @@
+{
+  "enhanceDefaultPaste": true,
+  "enhanceDropEvents": true,
+  "imageRegex": {},
+  "lineRegex": {},
+  "linkLineRegex": {},
+  "linkRegex": {},
+  "maximumTitleLength": 0,
+  "regex": {},
+  "shouldReplaceSelection": true,
+  "useNewScraper": true,
+  "websiteBlacklist": "google.com"
+}

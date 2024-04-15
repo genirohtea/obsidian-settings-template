@@ -26,6 +26,9 @@
     "iconInFrontmatterEnabled": false,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":",
-    "iconsInLinksEnabled": true
-  }
+    "iconsInLinksEnabled": true,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "debugMode": false
+  },
 }

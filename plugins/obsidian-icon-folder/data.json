@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiObsidian",
+      "LiTestTubeDiagonal",
       "FasCheck",
       "FasPeopleGroup",
-      "FabThreads",
-      "FasPeopleArrows",
-      "FasList"
+      "FabThreads"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,4 +31,20 @@
     "iconColorInFrontmatterFieldName": "iconColor",
     "debugMode": false
   },
+  "Productivity Support": "FasToolbox",
+  "Benchmarking": "FasTemperatureQuarter",
+  "Career": "LiLampDesk",
+  "Corporate": "FasBuilding",
+  "Customers": "FasCreditCard",
+  "Dashboarding": "FasChartLine",
+  "External Docs": "FasPaperclip",
+  "Bandwidth Control": "FasTrafficLight",
+  "Personel": "FasUser",
+  "On-Call": "FasPhone",
+  "Hardware Platforms": "FasComputer",
+  "vCPU": "FasMicrochip",
+  "Persistent Disk": "FasFloppyDisk",
+  "VM Families": "FasPeopleGroup",
+  "Testing": "LiTestTubeDiagonal",
+  "Obsidian": "SiObsidian"
 }

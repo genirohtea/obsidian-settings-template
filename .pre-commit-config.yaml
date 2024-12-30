@@ -55,4 +55,5 @@ repos:
     rev: v1.9.0
     hooks:
     -   id: mypy
-        additional_dependencies: [types-all]
+        # Disabled due to https://stackoverflow.com/questions/78833765/no-matching-distribution-found-for-types-pkg-resources
+        # additional_dependencies: [types-all]

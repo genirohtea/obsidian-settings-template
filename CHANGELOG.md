@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/genirohtea/obsidian-settings-template/compare/v1.0.0...v1.0.1) (2025-03-15)
+
+
+### Bug Fixes
+
+* **core plugins:** updated for new core plugins format ([e304317](https://github.com/genirohtea/obsidian-settings-template/commit/e304317205c1325ae372f768a3972f96c7982443))
+
 ## 1.0.0 (2024-04-19)
 
 

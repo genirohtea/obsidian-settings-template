@@ -22,7 +22,9 @@ repos:
     -   id: detect-private-key
     -   id: double-quote-string-fixer
     -   id: end-of-file-fixer
-        exclude: ^plugins/
+        exclude: |
+            ^plugins/
+            ^themes
     -   id: name-tests-test
     -   id: requirements-txt-fixer
     -   id: trailing-whitespace

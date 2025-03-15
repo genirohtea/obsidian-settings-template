@@ -21,10 +21,7 @@ repos:
     -   id: debug-statements
     -   id: detect-private-key
     -   id: double-quote-string-fixer
-    -   id: end-of-file-fixer
-        exclude: |
-            ^plugins/
-            ^themes
+    # No EOF fixers since most files are managed by external plugin manager
     -   id: name-tests-test
     -   id: requirements-txt-fixer
     -   id: trailing-whitespace

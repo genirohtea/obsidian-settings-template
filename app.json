@@ -1,10 +1,5 @@
 {
-  "promptDelete": false,
-  "useMarkdownLinks": true,
-  "newLinkFormat": "absolute",
-  "newFileLocation": "current",
   "attachmentFolderPath": "./",
-  "showInlineTitle": true,
   "mobileToolbarCommands": [
     "editor:insert-wikilink",
     "editor:insert-embed",
@@ -25,5 +20,10 @@
     "editor:undo",
     "editor:redo",
     "editor:configure-toolbar"
-  ]
+  ],
+  "newFileLocation": "current",
+  "newLinkFormat": "absolute",
+  "promptDelete": false,
+  "showInlineTitle": true,
+  "useMarkdownLinks": true
 }

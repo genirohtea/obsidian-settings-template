@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/genirohtea/obsidian-settings-template/compare/v1.0.0...v1.1.0) (2025-10-26)
+
+
+### Features
+
+* **plugins:** updated to latest versions as of 2025.10.25 ([5b04331](https://github.com/genirohtea/obsidian-settings-template/commit/5b04331341e626564096aba9fa03f1fd4101f82f))
+
+
+### Bug Fixes
+
+* **core plugins:** updated for new core plugins format ([e304317](https://github.com/genirohtea/obsidian-settings-template/commit/e304317205c1325ae372f768a3972f96c7982443))
+* **icon packs:** update to latest icon packs ([744c37e](https://github.com/genirohtea/obsidian-settings-template/commit/744c37e737dbb9b583a20ab72e1df981d7fd779e))
+
 ## 1.0.0 (2024-04-19)
 
 

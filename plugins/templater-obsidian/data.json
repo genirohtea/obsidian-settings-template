@@ -13,7 +13,32 @@
   "shell_path": "",
   "user_scripts_folder": "Obsidian/Template Scripts",
   "enable_folder_templates": true,
-  "folder_templates": [],
+  "folder_templates": [
+    {
+      "folder": "Obsidian/Plugins",
+      "template": "Obsidian/Templates/Obsidian Plugin Template 2024.04.02.md"
+    },
+    {
+      "folder": "Interpersonal/People",
+      "template": "Obsidian/Templates/People Template 2024.01.07.md"
+    },
+    {
+      "folder": "Interpersonal/Meetings",
+      "template": "Obsidian/Templates/Meeting Template 2023.05.14.md"
+    },
+    {
+      "folder": "Recipies/Coffee/Beans to Try",
+      "template": "Obsidian/Templates/Coffee Template 2024.01.13.md"
+    },
+    {
+      "folder": "Fashion/Fragrance",
+      "template": "Obsidian/Templates/Fragrance Template 2023.04.27.md"
+    },
+    {
+      "folder": "Housing/Devices",
+      "template": "Obsidian/Templates/Home Device Template 2023.09.04.md"
+    }
+  ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [],

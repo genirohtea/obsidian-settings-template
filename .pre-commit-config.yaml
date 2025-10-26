@@ -1,59 +1,80 @@
-# Requires the following prep
-# brew install pre-commit
-# brew install trufflehog
-# pre-commit install
-# pre-commit run --all-files
-# For OpenCommit Pre-commit message generation:
-# npm install -g opencommit
-# oco config set OCO_OPENAI_API_KEY=<your_api_key>
-# oco config set OCO_MODEL=gpt-4
-# oco config set OCO_EMOJI=false
-
+---
+# Test locally using pre-commit run --all-files
+exclude: (^|/)(plugins|themes)/
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
     hooks:
-    -   id: check-ast
-    -   id: check-case-conflict
-    -   id: check-executables-have-shebangs
-    -   id: check-symlinks
-    -   id: check-yaml
-    -   id: debug-statements
-    -   id: detect-private-key
-    -   id: double-quote-string-fixer
-    -   id: end-of-file-fixer
-    -   id: name-tests-test
-    -   id: requirements-txt-fixer
-    -   id: trailing-whitespace
--   repo: https://github.com/asottile/setup-cfg-fmt
-    rev: v2.5.0
+      - id: check-ast
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: debug-statements
+      - id: detect-private-key
+      - id: double-quote-string-fixer
+      # No EOF fixers since most files are managed by external plugin manager
+      - id: mixed-line-ending
+      - id: name-tests-test
+      - id: sort-simple-yaml
+      - id: pretty-format-json
+        args:
+          - "--autofix"
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
     hooks:
-    -   id: setup-cfg-fmt
--   repo: https://github.com/asottile/reorder-python-imports
-    rev: v3.12.0
+      - id: remove-crlf
+      - id: remove-tabs
+  - repo: https://github.com/asottile/add-trailing-comma
+    rev: v4.0.0
     hooks:
-    -   id: reorder-python-imports
-        args: [--py38-plus, --add-import, 'from __future__ import annotations']
--   repo: https://github.com/asottile/add-trailing-comma
-    rev: v3.1.0
+      - id: add-trailing-comma
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
     hooks:
-    -   id: add-trailing-comma
--   repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.2
+      - id: detect-secrets
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
     hooks:
-    -   id: pyupgrade
-        args: [--py38-plus]
--   repo: https://github.com/hhatto/autopep8
-    rev: v2.1.0
+      - id: codespell
+  - repo: https://github.com/oxsecurity/megalinter
+    rev: v9.1.0 # Git tag specifying the hook, not mega-linter-runner, version
     hooks:
-    -   id: autopep8
--   repo: https://github.com/PyCQA/flake8
-    rev: 7.0.0
+      - id: megalinter-incremental # Faster, less thorough
+        exclude: (^|/)(plugins|themes|snippets)/ # Also exclude snippets here since megalinter is very verbose
+        stages:
+          - pre-commit
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.8
     hooks:
-    -   id: flake8
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.9.0
+      - id: actionlint
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.9.1 # automatically updated by Commitizen
     hooks:
-    -   id: mypy
-        # Disabled due to https://stackoverflow.com/questions/78833765/no-matching-distribution-found-for-types-pkg-resources
-        # additional_dependencies: [types-all]
+      - id: commitizen
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.14.2
+    hooks:
+      # Run the linter.
+      - id: ruff
+        args: [--fix]
+      # Run the formatter.
+      - id: ruff-format
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.18.2
+    hooks:
+      - id: mypy
+  - repo: https://github.com/tofuutils/pre-commit-opentofu
+    rev: v2.2.2
+    hooks:
+      - id: tofu_fmt
+      - id: tofu_docs
+      - id: tofu_tflint
+      - id: tofu_validate

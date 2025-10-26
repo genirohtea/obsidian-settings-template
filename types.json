@@ -6,6 +6,7 @@
     "excalidraw-border-color": "text",
     "excalidraw-css": "text",
     "excalidraw-default-mode": "text",
+    "excalidraw-embed-md": "checkbox",
     "excalidraw-embeddable-theme": "text",
     "excalidraw-export-dark": "checkbox",
     "excalidraw-export-embed-scene": "checkbox",
@@ -25,6 +26,7 @@
     "excalidraw-url-prefix": "text",
     "heating": "multitext",
     "last_activity": "text",
+    "location": "multitext",
     "tags": "tags"
   }
 }

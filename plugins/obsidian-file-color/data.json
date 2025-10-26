@@ -93,5 +93,114 @@
       "value": "#11111b"
     }
   ],
-  "fileColors": []
+  "fileColors": [
+    {
+      "path": "To Be Sorted",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "Daily Notes",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "3D Printing",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Woodworking",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Tools",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Audiophile",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Everyday Carry",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Workstation",
+      "color": "bjGcNGwfUPS1GqTkHCe-8"
+    },
+    {
+      "path": "Entertainment",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Travel",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Fashion",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Life",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Recipies",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Sports",
+      "color": "4axxsmNQRE0k1SXm8rm2F"
+    },
+    {
+      "path": "Finance",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Government",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Health",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Housing",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Cars",
+      "color": "0BFRCPk9lFMywnZOsgIQf"
+    },
+    {
+      "path": "Education",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Employment",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Interview Preparation",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Learning Resources",
+      "color": "ThRU2Fxf2wCAGKseZAhWc"
+    },
+    {
+      "path": "Obsidian",
+      "color": "JBnFpl5magEV9CsZB2tSU"
+    },
+    {
+      "path": "Interpersonal",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    },
+    {
+      "path": "Readwise",
+      "color": "VYIJuzjC4ElA3Bvoajwuv"
+    },
+    {
+      "path": "Productivity",
+      "color": "_4T0sNO5kSwE4w7ujbLJ5"
+    }
+  ]
 }

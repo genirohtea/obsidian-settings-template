@@ -760,7 +760,7 @@ function valueModal(managedField, plugin) {
                 const selectOptions = JSON.parse(optionsString);
                 this.buildTemplateSelectItem(options2.template, this.contentEl.createDiv({ cls: "field-container" }), name, selectOptions);
               } catch ({ name: errorName, message }) {
-                const notice = `{{${name}}} field definition is not a valid JSON
+                const notice = `{{${name}}} field definition is not a valid JSON 
 in <${this.managedField.name}> ${this.managedField.fileClassName ? this.managedField.fileClassName : "Metadata Menu"} settings`;
                 if (errorName === "SyntaxError")
                   new import_obsidian4.Notice(notice, 5e3);
@@ -1108,16 +1108,16 @@ function displayValue2(managedField, container, onClicked = () => {
   return baseDisplayValue(managedField, container, onClicked);
 }
 function createDvField2(managedField, dv, p, fieldContainer, attrs = {}) {
-  var _a, _b;
+  var _a, _b, _c;
   attrs.cls = "value-container";
   const editBtn = fieldContainer.createEl("button");
-  const fieldValue = dv.el("span", managedField.value || "", attrs);
+  const fieldValue = dv.el("span", (_a = managedField.value) != null ? _a : "", attrs);
   fieldContainer.appendChild(fieldValue);
   const spacer = fieldContainer.createDiv({ cls: "spacer-1" });
-  if ((_a = attrs.options) == null ? void 0 : _a.alwaysOn)
+  if ((_b = attrs.options) == null ? void 0 : _b.alwaysOn)
     spacer.hide();
   (0, import_obsidian5.setIcon)(editBtn, getIcon("Number"));
-  if (!((_b = attrs == null ? void 0 : attrs.options) == null ? void 0 : _b.alwaysOn)) {
+  if (!((_c = attrs == null ? void 0 : attrs.options) == null ? void 0 : _c.alwaysOn)) {
     editBtn.hide();
     spacer.show();
     fieldContainer.onmouseover = () => {
@@ -14420,7 +14420,8 @@ var DEFAULT_SETTINGS = {
   chooseFileClassAtFileCreation: false,
   autoInsertFieldsAtFileClassInsertion: false,
   fileClassIcon: "package",
-  isAutoCalculationEnabled: true
+  isAutoCalculationEnabled: true,
+  disableDataviewPrompt: false
 };
 var incrementVersion = (plugin) => {
   const currentVersion = plugin.settings.settingsVersion;
@@ -14727,7 +14728,7 @@ function buildSettingsModal(fieldConstructor, plugin, parentSetting, parentSetti
         const info = new import_obsidian34.ButtonComponent(this.frontmatterOnlyTypeInfoContainer);
         info.setClass("tooltip-button");
         (0, import_obsidian34.setIcon)(info.buttonEl, "info");
-        info.setTooltip(`${this.field.type} field type
+        info.setTooltip(`${this.field.type} field type 
 are only available
 in the frontmatter section`);
       }
@@ -14753,7 +14754,7 @@ in the frontmatter section`);
       const info = new import_obsidian34.ButtonComponent(infoBtnContainer);
       info.setClass("tooltip-button");
       (0, import_obsidian34.setIcon)(info.buttonEl, !(this.field.id && !this.isNew) ? "shield-alert" : "lock");
-      info.setTooltip(`The field type
+      info.setTooltip(`The field type 
 can't be modified once saved`);
       this.typeNameContainer = this.typeSelectContainer.createDiv({ cls: "field-type-label" }).createDiv({ cls: `chip ${getTagName(this.field.type)}` });
       if (!this.field.id || this.isNew) {
@@ -15435,6 +15436,18 @@ var MetadataMenuSettingTab = class extends import_obsidian38.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     }).settingEl.addClass("no-border");
+    if (!this.app.plugins.enabledPlugins.has("dataview") || this.app.plugins.plugins["dataview"] && //@ts-ignore
+    !this.app.plugins.plugins["dataview"].settings.enableDataviewJs) {
+      new import_obsidian38.Setting(globalSettings.containerEl).setName("Disable dataview notice").setDesc(
+        "Dataview is not installed or enabled. Disable this notice"
+      ).addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.disableDataviewPrompt);
+        toggle.onChange(async (value) => {
+          this.plugin.settings.disableDataviewPrompt = value;
+          await this.plugin.saveSettings();
+        });
+      }).settingEl.addClass("no-border");
+    }
     containerEl.createDiv({ cls: "setting-divider" });
     const presetFieldsSettings = new PresetFieldsSettingGroup(
       this,
@@ -18087,12 +18100,12 @@ const basename = (item) => {
     }else if(typeof item === 'string'){
         return item
     }else{
-        const numVal = parseFloat(item?.toString())
-        return !isNaN(numVal) ? numVal : item?.toString() || ''
+        const numVal = parseFloat(item?.toString()) 
+        return !isNaN(numVal) ? numVal : item?.toString() || '' 
     }
 }
 const fileFileClasses = (path) => {
-    return MetadataMenu.fieldIndex.filesFileClasses.get(path)?.map(_fC => _fC.name) || []
+    return MetadataMenu.fieldIndex.filesFileClasses.get(path)?.map(_fC => _fC.name) || [] 
 }
 const hasFileClass = (path, id) => {
     if(id.includes('____')){
@@ -18111,7 +18124,7 @@ const rank = (item, options, dir) => {
 dv.table([
 `;
     dvJS += columns.map((column) => `"${buildColumnName(column)}"`).join(",");
-    dvJS += `],
+    dvJS += `], 
 `;
     dvJS += this.buildDvJSQuery();
     dvJS += this.buildSorterQuery();
@@ -25415,12 +25428,12 @@ var FileClassFolderButton = class extends import_obsidian80.Component {
     );
   }
   addButton() {
-    var _a, _b, _c;
+    var _a, _b, _c, _d;
     const fCFolderPath = (_a = this.plugin.settings.classFilesPath) == null ? void 0 : _a.replace(/\/$/, "");
     const explorerView = (_c = (_b = this.plugin.app.workspace.getLeavesOfType("file-explorer")) == null ? void 0 : _b[0]) == null ? void 0 : _c.view;
     if (!explorerView || !fCFolderPath)
       return;
-    const fCFolder = explorerView.fileItems[fCFolderPath];
+    const fCFolder = (_d = explorerView == null ? void 0 : explorerView.fileItems) == null ? void 0 : _d[fCFolderPath];
     if (!fCFolder)
       return;
     const container = fCFolder.selfEl;
@@ -25753,18 +25766,18 @@ var MetadataMenu = class extends import_obsidian85.Plugin {
     this.indexName = `metadata_menu_${this.app.appId || this.app.vault.adapter.basePath || this.app.vault.getName()}`;
     (window["MetadataMenuAPI"] = this.api) && this.register(() => delete window["MetadataMenuAPI"]);
     (window["MetadataMenu"] = this) && this.register(() => delete window["MetadataMenu"]);
-    if (!this.app.plugins.enabledPlugins.has("dataview") || //@ts-ignore
-    this.app.plugins.plugins["dataview"] && !this.app.plugins.plugins["dataview"].settings.enableDataviewJs) {
+    await this.loadSettings();
+    await migrateSettings(this);
+    if (!this.settings.disableDataviewPrompt && (!this.app.plugins.enabledPlugins.has("dataview") || this.app.plugins.plugins["dataview"] && //@ts-ignore
+    !this.app.plugins.plugins["dataview"].settings.enableDataviewJs)) {
       new import_obsidian85.Notice(
         `------------------------------------------
-(!) INFO (!)
+(!) INFO (!) 
 Install and enable dataview and dataviewJS for extra Metadata Menu features
 ------------------------------------------`,
         6e4
       );
     }
-    await this.loadSettings();
-    await migrateSettings(this);
     this.indexStatus = this.addChild(new IndexStatus(this));
     this.codeBlockListManager = this.addChild(new FileClassCodeBlockListManager(this));
     this.fieldIndex = this.addChild(new FieldIndex(this));
@@ -25855,3 +25868,5 @@ Install and enable dataview and dataviewJS for extra Metadata Menu features
     FileClassFolderButton.removeBtn(this);
   }
 };
+
+/* nosourcemap */

@@ -33,7 +33,7 @@ jobs:
       issues: write
     steps:
       - name: Check out the codebase.
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "TODO to Issue"
         uses: "alstr/todo-to-issue-action@v5.1.13"

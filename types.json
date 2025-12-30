@@ -10,6 +10,7 @@
     "excalidraw-embeddable-theme": "text",
     "excalidraw-export-dark": "checkbox",
     "excalidraw-export-embed-scene": "checkbox",
+    "excalidraw-export-internal-links": "checkbox",
     "excalidraw-export-padding": "number",
     "excalidraw-export-pngscale": "number",
     "excalidraw-export-transparent": "checkbox",

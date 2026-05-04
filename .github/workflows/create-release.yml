@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Generate release, changelog.
-        uses: googleapis/release-please-action@v4.4.0
+        uses: googleapis/release-please-action@v5.0.0
         with:
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named

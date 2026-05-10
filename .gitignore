@@ -1,3 +1,40 @@
+# MANAGED BY TEMPLATE (copied 2026-05-10 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
+
+# IDE related cache/leak files
+.idea
+.vscode/**
+.obsidian
+.obsidian/**
+.claude
+
+# Local related cache/leak files
+.DS_Store
+**/.envrc
+**/.env
+*.log
+temp/
+build/
+__pycache__
+.ruff_cache/
+.pytest_cache/
+.ansible/
+
+megalinter-reports
+
+# Ansible related cache/leak files
+ansible.cfg
+
+# Kubernetes related cache/leak files
+kubeconfig
+
+# Terraform related cache/leak files
+**/.terraform
+**/*.auto.tfvars
+**/*.tfvars
+
+# END MANAGED TEMPLATE — add custom content below
+
+
 # Obsidian specific ignored files
 core-plugins-migration 2.json
 app 2.json
@@ -15,40 +52,3 @@ workspace
 ##  Plugins that cannot be synced due to API keys or other personal information
 plugins/readwise-official
 plugins/obsidian-map-view
-plugins/remember-cursor-position/cursor-positions.json
-
-## Ignored files from Github Actions Template
-### No ansible in obsidian
-.ansible-lint
-### No mise in obsidian
-.mise.toml
-
-# From Github Actions Template
-
-
-# IDE related cache/leak files
-.idea
-.vscode/**
-.obsidian
-.obsidian/**
-
-# Local related cache/leak files
-.DS_Store
-**/.envrc
-**/.env
-*.log
-temp/
-build/
-
-megalinter-reports
-
-# Ansible related cache/leak files
-ansible.cfg
-
-# Kubernetes related cache/leak files
-kubeconfig
-
-# Terraform related cache/leak files
-**/.terraform
-**/*.auto.tfvars
-**/*.tfvars

@@ -1,4 +1,6 @@
 {
+  "apiTokenSecretId": "swt-todoist-api-token",
+  "tokenStorage": "secrets",
   "fadeToggle": true,
   "autoRefreshToggle": true,
   "autoRefreshInterval": 60,
@@ -12,6 +14,7 @@
   "taskCreationDefaultLabels": [],
   "defaultAddTaskAction": "add",
   "debugLogging": false,
+  "version": 1,
   "renderDescription": true,
   "renderDate": true,
   "renderProject": true,

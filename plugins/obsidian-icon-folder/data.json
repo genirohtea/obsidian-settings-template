@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasPaperclip",
-      "SiObsidian",
-      "LiTestTubeDiagonal",
-      "FasCheck",
-      "FasPeopleGroup"
+      "Shirt",
+      "Coffee",
+      "FileType",
+      "FileCheck",
+      "Wind"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,10 +20,10 @@
       "left": 0
     },
     "emojiStyle": "native",
-    "iconInTabsEnabled": false,
+    "iconInTabsEnabled": true,
     "iconsBackgroundCheckEnabled": true,
     "iconInTitleEnabled": false,
-    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterEnabled": true,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":",
     "iconsInLinksEnabled": true,
@@ -60,5 +60,22 @@
   "Life": "FasChild",
   "Readwise": "FabThreads",
   "Interpersonal": "FasPeopleGroup",
-  "Productivity": "FasCheck"
+  "Productivity": "FasCheck",
+  "Obsidian/FileClasses/RealEstateListing.md": "Home",
+  "Obsidian/FileClasses/Wine.md": "Wine",
+  "Obsidian/FileClasses/SizedItem.md": "Shirt",
+  "Obsidian/FileClasses/Person.md": "User",
+  "Obsidian/FileClasses/ObsidianPlugin.md": "Plug",
+  "Obsidian/FileClasses/RealEstateLender.md": "FileCheck",
+  "Obsidian/FileClasses/Meeting.md": "Users",
+  "Obsidian/FileClasses/PeriodicNote.md": "FileCheck",
+  "Obsidian/FileClasses/Item.md": "Box",
+  "Obsidian/FileClasses/Location.md": "Map",
+  "Obsidian/FileClasses/HomeDevice.md": "LampDesk",
+  "Obsidian/FileClasses/Fragrance.md": "Wind",
+  "Obsidian/FileClasses/Filament.md": "FileCheck",
+  "Obsidian/FileClasses/Default.md": "FileType",
+  "Obsidian/FileClasses/Beer.md": "FileCheck",
+  "Obsidian/FileClasses/CoffeeBeans.md": "Coffee",
+  "Obsidian/FileClasses/Clothing.md": "Shirt"
 }

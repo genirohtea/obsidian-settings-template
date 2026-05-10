@@ -88,7 +88,8 @@
       "enabled": true
     },
     "move-footnotes-to-the-bottom": {
-      "enabled": true
+      "enabled": true,
+      "include-blank-line-between-footnotes": false
     },
     "re-index-footnotes": {
       "enabled": true
@@ -107,7 +108,7 @@
       "style": "asterisk"
     },
     "no-bare-urls": {
-      "enabled": false,
+      "enabled": true,
       "no-bare-uris": false
     },
     "ordered-list-style": {
@@ -273,9 +274,11 @@
   "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
+  "suppressMessageWhenNoChange": true,
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
+  "additionalFileExtensions": [],
   "foldersToIgnore": [
     "Obsidian/Templates",
     "sortspec",

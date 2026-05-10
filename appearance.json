@@ -1,19 +1,13 @@
 {
   "accentColor": "",
-  "cssTheme": "Minimal",
+  "baseFontSizeAction": true,
+  "cssTheme": "AnuPpuccin",
   "enabledCssSnippets": [
-    "[editor] Custom Tag styles",
-    "[editor] Editor fixes",
-    "[ui] Compact Sidebar Header",
-    "[ui] Compact Tab Header",
-    "[ui] Compact Tabs",
-    "[ui] Statusbar tweaks",
-    "supercharged-links-gen",
-    "Quiet Outline",
-    "MySnippets",
-    "folder-color-background",
-    "[ui] Hide Vault Title in Left Sidebar"
+    "supercharged-links-gen"
   ],
+  "interfaceFontFamily": "Fira Sans",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono",
   "showViewHeader": true,
+  "textFontFamily": "Fira Sans",
   "theme": "system"
 }

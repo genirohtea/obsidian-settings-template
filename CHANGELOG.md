@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.1.0](https://github.com/genirohtea/obsidian-settings-template/compare/v1.0.0...v1.1.0) (2026-05-11)
+
+
+### Features
+
+* **excalidraw:** update for excalidraw internal links configuration ([417f4c3](https://github.com/genirohtea/obsidian-settings-template/commit/417f4c371a38cc6e6cb15819c5f4ec73041d304a))
+* **obsidian:** updated obsidian version with new core plugin configs ([f8c4f41](https://github.com/genirohtea/obsidian-settings-template/commit/f8c4f411cee0286544cb4e47f1f91b23fcff87cc))
+* **plugins:** updated to latest versions as of 2025.10.25 ([5b04331](https://github.com/genirohtea/obsidian-settings-template/commit/5b04331341e626564096aba9fa03f1fd4101f82f))
+
+
+### Bug Fixes
+
+* **core plugins:** updated for new core plugins format ([e304317](https://github.com/genirohtea/obsidian-settings-template/commit/e304317205c1325ae372f768a3972f96c7982443))
+* **icon packs:** update to latest icon packs ([744c37e](https://github.com/genirohtea/obsidian-settings-template/commit/744c37e737dbb9b583a20ab72e1df981d7fd779e))
+* **lint:** resolved all linting errors from gh actions template v2.0.0 ([ae10397](https://github.com/genirohtea/obsidian-settings-template/commit/ae10397d58b90c32c1694a2534d1a701af8cf82b))
+* **snippets:** removed snippets that were no longer in use ([43ad6db](https://github.com/genirohtea/obsidian-settings-template/commit/43ad6db795e345446cfa249b70cabcbebc1fb4f3))
+
 ## 1.0.0 (2024-04-19)
 
 

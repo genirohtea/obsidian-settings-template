@@ -1,18 +1,10 @@
 {
-  "command_timeout": 5,
-  "templates_folder": "Obsidian/Templates",
-  "templates_pairs": [
-    [
-      "",
-      ""
-    ]
-  ],
-  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": true,
-  "enable_system_commands": false,
-  "shell_path": "",
-  "user_scripts_folder": "Obsidian/Template Scripts",
+  "command_timeout": 5,
   "enable_folder_templates": true,
+  "enable_ribbon_icon": true,
+  "enable_system_commands": false,
+  "enabled_templates_hotkeys": [],
   "folder_templates": [
     {
       "folder": "Obsidian/Plugins",
@@ -39,11 +31,19 @@
       "template": "Obsidian/Templates/Home Device Template 2023.09.04.md"
     }
   ],
-  "syntax_highlighting": true,
-  "syntax_highlighting_mobile": false,
-  "enabled_templates_hotkeys": [],
+  "shell_path": "",
   "startup_templates": [
     ""
   ],
-  "enable_ribbon_icon": true
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "templates_folder": "Obsidian/Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "user_scripts_folder": "Obsidian/Template Scripts"
 }

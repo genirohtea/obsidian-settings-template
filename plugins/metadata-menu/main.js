@@ -760,7 +760,7 @@ function valueModal(managedField, plugin) {
                 const selectOptions = JSON.parse(optionsString);
                 this.buildTemplateSelectItem(options2.template, this.contentEl.createDiv({ cls: "field-container" }), name, selectOptions);
               } catch ({ name: errorName, message }) {
-                const notice = `{{${name}}} field definition is not a valid JSON 
+                const notice = `{{${name}}} field definition is not a valid JSON
 in <${this.managedField.name}> ${this.managedField.fileClassName ? this.managedField.fileClassName : "Metadata Menu"} settings`;
                 if (errorName === "SyntaxError")
                   new import_obsidian4.Notice(notice, 5e3);
@@ -8110,9 +8110,9 @@ function foldFlowLines(text, indent, mode = "flow", { indentAtStart, lineWidth =
       end2 = i + endStep;
       split = void 0;
     } else {
-      if (ch === " " && prev && prev !== " " && prev !== "\n" && prev !== "	") {
+      if (ch === " " && prev && prev !== " " && prev !== "\n" && prev !== " ") {
         const next = text[i + 1];
-        if (next && next !== " " && next !== "\n" && next !== "	")
+        if (next && next !== " " && next !== "\n" && next !== " ")
           split = i;
       }
       if (i >= end2) {
@@ -8121,7 +8121,7 @@ function foldFlowLines(text, indent, mode = "flow", { indentAtStart, lineWidth =
           end2 = split + endStep;
           split = void 0;
         } else if (mode === FOLD_QUOTED) {
-          while (prev === " " || prev === "	") {
+          while (prev === " " || prev === " ") {
             prev = ch;
             ch = text[i += 1];
             overflow = true;
@@ -8164,7 +8164,7 @@ ${indent}${text.slice(fold + 1, end3)}`;
 }
 function consumeMoreIndentedLines(text, i) {
   let ch = text[i + 1];
-  while (ch === " " || ch === "	") {
+  while (ch === " " || ch === " ") {
     do {
       ch = text[i += 1];
     } while (ch && ch !== "\n");
@@ -8322,7 +8322,7 @@ function blockString({ comment, type, value }, ctx, onComment, onChompKeep) {
   let endStart;
   for (endStart = value.length; endStart > 0; --endStart) {
     const ch = value[endStart - 1];
-    if (ch !== "\n" && ch !== "	" && ch !== " ")
+    if (ch !== "\n" && ch !== " " && ch !== " ")
       break;
   }
   let end2 = value.substring(endStart);
@@ -10443,7 +10443,7 @@ function resolveProps(tokens, { flow, indicator, next, offset: offset2, onError,
     }
     switch (token.type) {
       case "space":
-        if (!flow && atNewline && indicator !== "doc-start" && token.source[0] === "	")
+        if (!flow && atNewline && indicator !== "doc-start" && token.source[0] === "    ")
           onError(token, "TAB_AS_INDENT", "Tabs are not allowed as indentation");
         hasSpace = true;
         break;
@@ -11049,7 +11049,7 @@ function resolveBlockScalar(scalar, strict, onError) {
     if (type === Scalar.BLOCK_LITERAL) {
       value += sep + indent.slice(trimIndent) + content;
       sep = "\n";
-    } else if (indent.length > trimIndent || content[0] === "	") {
+    } else if (indent.length > trimIndent || content[0] === "   ") {
       if (sep === " ")
         sep = "\n";
       else if (!prevMoreIndented && sep === "\n")
@@ -11192,7 +11192,7 @@ function resolveFlowScalar(scalar, strict, onError) {
 function plainValue(source, onError) {
   let badChar = "";
   switch (source[0]) {
-    case "	":
+    case "  ":
       badChar = "a tab character";
       break;
     case ",":
@@ -11225,8 +11225,8 @@ function foldLines(source) {
   var _a;
   let first, line;
   try {
-    first = new RegExp("(.*?)(?<![ 	])[ 	]*\r?\n", "sy");
-    line = new RegExp("[ 	]*(.*?)(?:(?<![ 	])[ 	]*)?\r?\n", "sy");
+    first = new RegExp("(.*?)(?<![  ])[     ]*\r?\n", "sy");
+    line = new RegExp("[    ]*(.*?)(?:(?<![     ])[     ]*)?\r?\n", "sy");
   } catch (_) {
     first = /(.*?)[ \t]*\r?\n/sy;
     line = /[ \t]*(.*?)[ \t]*\r?\n/sy;
@@ -11272,11 +11272,11 @@ function doubleQuotedValue(source, onError) {
         res += cc;
       else if (next === "\n") {
         next = source[i + 1];
-        while (next === " " || next === "	")
+        while (next === " " || next === "   ")
           next = source[++i + 1];
       } else if (next === "\r" && source[i + 1] === "\n") {
         next = source[++i + 1];
-        while (next === " " || next === "	")
+        while (next === " " || next === "   ")
           next = source[++i + 1];
       } else if (next === "x" || next === "u" || next === "U") {
         const length = { x: 2, u: 4, U: 8 }[next];
@@ -11287,10 +11287,10 @@ function doubleQuotedValue(source, onError) {
         onError(i - 1, "BAD_DQ_ESCAPE", `Invalid escape sequence ${raw}`);
         res += raw;
       }
-    } else if (ch === " " || ch === "	") {
+    } else if (ch === " " || ch === "   ") {
       const wsStart = i;
       let next = source[i + 1];
-      while (next === " " || next === "	")
+      while (next === " " || next === " ")
         next = source[++i + 1];
       if (next !== "\n" && !(next === "\r" && source[i + 2] === "\n"))
         res += i > wsStart ? source.slice(wsStart, i + 1) : ch;
@@ -11305,7 +11305,7 @@ function doubleQuotedValue(source, onError) {
 function foldNewline(source, offset2) {
   let fold = "";
   let ch = source[offset2 + 1];
-  while (ch === " " || ch === "	" || ch === "\n" || ch === "\r") {
+  while (ch === " " || ch === " " || ch === "\n" || ch === "\r") {
     if (ch === "\r" && source[offset2 + 2] !== "\n")
       break;
     if (ch === "\n")
@@ -11325,7 +11325,7 @@ var escapeCodes = {
   f: "\f",
   n: "\n",
   r: "\r",
-  t: "	",
+  t: "  ",
   v: "\v",
   N: "\x85",
   _: "\xA0",
@@ -11335,7 +11335,7 @@ var escapeCodes = {
   '"': '"',
   "/": "/",
   "\\": "\\",
-  "	": "	"
+  " ": "    "
 };
 function parseCharCode(source, offset2, length, onError) {
   const cc = source.substr(offset2, length);
@@ -11849,7 +11849,7 @@ function tokenType(source) {
   }
   switch (source[0]) {
     case " ":
-    case "	":
+    case "  ":
       return "space";
     case "#":
       return "comment";
@@ -11879,7 +11879,7 @@ function isEmpty(ch) {
     case " ":
     case "\n":
     case "\r":
-    case "	":
+    case "  ":
       return true;
     default:
       return false;
@@ -11888,7 +11888,7 @@ function isEmpty(ch) {
 var hexDigits = "0123456789ABCDEFabcdef".split("");
 var tagChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-#;/?:@&=+$_.!~*'()".split("");
 var invalidFlowScalarChars = ",[]{}".split("");
-var invalidAnchorChars = " ,[]{}\n\r	".split("");
+var invalidAnchorChars = " ,[]{}\n\r    ".split("");
 var isNotAnchorChar = (ch) => !ch || invalidAnchorChars.includes(ch);
 var Lexer = class {
   constructor() {
@@ -11924,7 +11924,7 @@ var Lexer = class {
   atLineEnd() {
     let i = this.pos;
     let ch = this.buffer[i];
-    while (ch === " " || ch === "	")
+    while (ch === " " || ch === "   ")
       ch = this.buffer[++i];
     if (!ch || ch === "#" || ch === "\n")
       return true;
@@ -12013,12 +12013,12 @@ var Lexer = class {
       const cs = line.indexOf("#");
       if (cs !== -1) {
         const ch = line[cs - 1];
-        if (ch === " " || ch === "	")
+        if (ch === " " || ch === "  ")
           dirEnd = cs - 1;
       }
       while (true) {
         const ch = line[dirEnd - 1];
-        if (ch === " " || ch === "	")
+        if (ch === " " || ch === "  ")
           dirEnd -= 1;
         else
           break;
@@ -12284,7 +12284,7 @@ var Lexer = class {
         if (ch2 === "\r")
           ch2 = this.buffer[--i];
         const lastChar = i;
-        while (ch2 === " " || ch2 === "	")
+        while (ch2 === " " || ch2 === " ")
           ch2 = this.buffer[--i];
         if (ch2 === "\n" && i >= this.pos && i + 1 + indent > lastChar)
           nl = i;
@@ -12412,7 +12412,7 @@ var Lexer = class {
     let ch;
     do {
       ch = this.buffer[++i];
-    } while (ch === " " || allowTabs && ch === "	");
+    } while (ch === " " || allowTabs && ch === "    ");
     const n = i - this.pos;
     if (n > 0) {
       yield this.buffer.substr(this.pos, n);
@@ -14728,7 +14728,7 @@ function buildSettingsModal(fieldConstructor, plugin, parentSetting, parentSetti
         const info = new import_obsidian34.ButtonComponent(this.frontmatterOnlyTypeInfoContainer);
         info.setClass("tooltip-button");
         (0, import_obsidian34.setIcon)(info.buttonEl, "info");
-        info.setTooltip(`${this.field.type} field type 
+        info.setTooltip(`${this.field.type} field type
 are only available
 in the frontmatter section`);
       }
@@ -14754,7 +14754,7 @@ in the frontmatter section`);
       const info = new import_obsidian34.ButtonComponent(infoBtnContainer);
       info.setClass("tooltip-button");
       (0, import_obsidian34.setIcon)(info.buttonEl, !(this.field.id && !this.isNew) ? "shield-alert" : "lock");
-      info.setTooltip(`The field type 
+      info.setTooltip(`The field type
 can't be modified once saved`);
       this.typeNameContainer = this.typeSelectContainer.createDiv({ cls: "field-type-label" }).createDiv({ cls: `chip ${getTagName(this.field.type)}` });
       if (!this.field.id || this.isNew) {
@@ -18100,12 +18100,12 @@ const basename = (item) => {
     }else if(typeof item === 'string'){
         return item
     }else{
-        const numVal = parseFloat(item?.toString()) 
-        return !isNaN(numVal) ? numVal : item?.toString() || '' 
+        const numVal = parseFloat(item?.toString())
+        return !isNaN(numVal) ? numVal : item?.toString() || ''
     }
 }
 const fileFileClasses = (path) => {
-    return MetadataMenu.fieldIndex.filesFileClasses.get(path)?.map(_fC => _fC.name) || [] 
+    return MetadataMenu.fieldIndex.filesFileClasses.get(path)?.map(_fC => _fC.name) || []
 }
 const hasFileClass = (path, id) => {
     if(id.includes('____')){
@@ -18124,7 +18124,7 @@ const rank = (item, options, dir) => {
 dv.table([
 `;
     dvJS += columns.map((column) => `"${buildColumnName(column)}"`).join(",");
-    dvJS += `], 
+    dvJS += `],
 `;
     dvJS += this.buildDvJSQuery();
     dvJS += this.buildSorterQuery();
@@ -25772,7 +25772,7 @@ var MetadataMenu = class extends import_obsidian85.Plugin {
     !this.app.plugins.plugins["dataview"].settings.enableDataviewJs)) {
       new import_obsidian85.Notice(
         `------------------------------------------
-(!) INFO (!) 
+(!) INFO (!)
 Install and enable dataview and dataviewJS for extra Metadata Menu features
 ------------------------------------------`,
         6e4

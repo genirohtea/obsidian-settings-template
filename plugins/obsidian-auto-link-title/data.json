@@ -1,16 +1,16 @@
 {
-  "regex": {},
-  "lineRegex": {},
-  "linkRegex": {},
-  "linkLineRegex": {},
-  "imageRegex": {},
   "enhanceDefaultPaste": true,
-  "shouldPreserveSelectionAsTitle": false,
   "enhanceDropEvents": true,
-  "websiteBlacklist": "google.com",
-  "maximumTitleLength": 0,
-  "useNewScraper": true,
+  "imageRegex": {},
+  "lineRegex": {},
+  "linkLineRegex": {},
   "linkPreviewApiKey": "",
+  "linkRegex": {},
+  "maximumTitleLength": 0,
+  "regex": {},
+  "shouldPreserveSelectionAsTitle": false,
+  "shouldReplaceSelection": true,
   "useBetterPasteId": true,
-  "shouldReplaceSelection": true
+  "useNewScraper": true,
+  "websiteBlacklist": "google.com"
 }

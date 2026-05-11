@@ -1,10 +1,10 @@
 {
-  "id": "periodic-notes",
-  "name": "Periodic Notes",
-  "description": "Create/manage your daily, weekly, and monthly notes",
-  "version": "0.0.17",
   "author": "Liam Cain",
   "authorUrl": "https://github.com/liamcain/",
+  "description": "Create/manage your daily, weekly, and monthly notes",
+  "id": "periodic-notes",
   "isDesktopOnly": false,
-  "minAppVersion": "0.10.11"
+  "minAppVersion": "0.10.11",
+  "name": "Periodic Notes",
+  "version": "0.0.17"
 }

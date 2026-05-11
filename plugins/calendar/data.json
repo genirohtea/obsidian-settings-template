@@ -1,10 +1,10 @@
 {
+  "localeOverride": "system-default",
   "shouldConfirmBeforeCreate": true,
-  "weekStart": "locale",
-  "wordsPerDot": 250,
   "showWeeklyNote": true,
+  "weekStart": "locale",
+  "weeklyNoteFolder": "",
   "weeklyNoteFormat": "",
   "weeklyNoteTemplate": "",
-  "weeklyNoteFolder": "",
-  "localeOverride": "system-default"
+  "wordsPerDot": 250
 }

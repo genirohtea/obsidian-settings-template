@@ -1,33 +1,33 @@
 {
-  "showGettingStartedBanner": false,
+  "daily": {
+    "enabled": true,
+    "folder": "Daily Notes",
+    "format": "YYYY/MM-MMMM/YYYY-MM-DD-ddd",
+    "template": "Obsidian/Templates/Daily Note Template 2023.10.15.md"
+  },
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
-  "daily": {
-    "folder": "Daily Notes",
-    "template": "Obsidian/Templates/Daily Note Template 2023.10.15.md",
-    "enabled": true,
-    "format": "YYYY/MM-MMMM/YYYY-MM-DD-ddd"
-  },
-  "weekly": {
-    "format": "",
-    "template": "",
-    "folder": ""
-  },
   "monthly": {
-    "format": "YYYY/MM-MMMM/MMMM",
-    "template": "Obsidian/Templates/Monthly Note Template.md",
+    "enabled": true,
     "folder": "Daily Notes",
-    "enabled": true
+    "format": "YYYY/MM-MMMM/MMMM",
+    "template": "Obsidian/Templates/Monthly Note Template.md"
   },
   "quarterly": {
+    "folder": "",
     "format": "",
-    "template": "",
-    "folder": ""
+    "template": ""
+  },
+  "showGettingStartedBanner": false,
+  "weekly": {
+    "folder": "",
+    "format": "",
+    "template": ""
   },
   "yearly": {
-    "format": "YYYY/yyyy",
-    "template": "Obsidian/Templates/Daily Note Template.md",
+    "enabled": true,
     "folder": "Daily Notes",
-    "enabled": true
+    "format": "YYYY/yyyy",
+    "template": "Obsidian/Templates/Daily Note Template.md"
   }
 }

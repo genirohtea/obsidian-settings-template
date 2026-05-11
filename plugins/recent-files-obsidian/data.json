@@ -1,4 +1,7 @@
 {
+  "maxLength": null,
+  "omittedPaths": [],
+  "openType": "tab",
   "recentFiles": [
     {
       "basename": "Home",
@@ -144,8 +147,5 @@
       "basename": "Cables",
       "path": "Keyboards/Cables.md"
     }
-  ],
-  "omittedPaths": [],
-  "maxLength": null,
-  "openType": "tab"
+  ]
 }

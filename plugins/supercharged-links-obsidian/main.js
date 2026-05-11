@@ -144,7 +144,7 @@ function fetchTargetAttributesSync(app, settings, dest, addDataHref) {
         if (api) {
             getResults(api);
         }
-        // This is crashing for some people. I think ignoring it will be ok. 
+        // This is crashing for some people. I think ignoring it will be ok.
         // else
         //     this.plugin.registerEvent(
         //         app.metadataCache.on("dataview:api-ready", (api: any) =>
@@ -228,7 +228,7 @@ function updateDivExtraAttributes(app, settings, link, destName, linkName, filte
     const attributeSources = [
         () => parent === null || parent === void 0 ? void 0 : parent.getAttribute('data-path'), // File Browser
         () => parent === null || parent === void 0 ? void 0 : parent.getAttribute("data-href"), // Bases
-        () => parent === null || parent === void 0 ? void 0 : parent.getAttribute("href"), // Bases 
+        () => parent === null || parent === void 0 ? void 0 : parent.getAttribute("href"), // Bases
         () => link.getAttribute("data-href"), // Bases (v1.10+)
         () => link.getAttribute("href"), // Bases
         () => (parent === null || parent === void 0 ? void 0 : parent.getAttribute("class")) === "suggestion-content" && link.nextElementSibling
@@ -851,7 +851,7 @@ class SuperchargedLinksSettingTab extends obsidian.PluginSettingTab {
         containerEl.createEl('h4', { text: 'Styling' });
         const styleSettingDescription = containerEl.createDiv();
         styleSettingDescription.innerHTML = `
-Styling can be done using the Style Settings plugin. 
+Styling can be done using the Style Settings plugin.
  <ol>
  <li>Create selectors down below.</li>
  <li>Go to the Style Settings tab and style your links!</li>
@@ -1290,7 +1290,7 @@ class SuperchargedLinks extends obsidian.Plugin {
             });
             // Initialization
             this.registerEvent(this.app.workspace.on("window-open", (window, win) => this.initModalObservers(this, window.getContainer().doc)));
-            // Update when 
+            // Update when
             // Debounced to prevent lag when writing
             this.registerEvent(this.app.metadataCache.on('changed', obsidian.debounce(updateLinks, 500, true)));
             // Update when layout changes
@@ -1301,7 +1301,7 @@ class SuperchargedLinks extends obsidian.Plugin {
             this.registerEvent(this.app.workspace.on("layout-change", () => this.initViewObservers(this)));
             // DEBUG: When adding a new view, to get the proper id of that view, uncomment this and reload the plugin
             // this.app.workspace.iterateAllLeaves(leaf => {
-            // 	console.log(leaf.view.getViewType());
+            //  console.log(leaf.view.getViewType());
             // });
         });
     }
@@ -1415,14 +1415,14 @@ class SuperchargedLinks extends obsidian.Plugin {
         // }
         // else if (leaves.length < 1) return;
         // else {
-        // 	const container = leaves[0].view.containerEl;
-        // 	this.updateContainer(container, plugin, selector);
-        // 	if (updateDynamic) {
-        // 		plugin._watchContainerDynamic(viewTypeName, container, plugin, selector)
-        // 	}
-        // 	else {
-        // 		plugin._watchContainer(viewTypeName, container, plugin, selector);
-        // 	}
+        //  const container = leaves[0].view.containerEl;
+        //  this.updateContainer(container, plugin, selector);
+        //  if (updateDynamic) {
+        //      plugin._watchContainerDynamic(viewTypeName, container, plugin, selector)
+        //  }
+        //  else {
+        //      plugin._watchContainer(viewTypeName, container, plugin, selector);
+        //  }
         // }
     }
     updateContainer(container, plugin, selector, filter_collapsible = false) {

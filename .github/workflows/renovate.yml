@@ -1,5 +1,5 @@
 ---
-# MANAGED BY TEMPLATE (copied 2026-05-10 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
+# MANAGED BY TEMPLATE (copied 2026-09-26 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
 # Self-hosted Renovate runner. Reads `.github/renovate.json5` and opens
 # update PRs for GitHub Actions, pre-commit hooks, and mise tools.
 # Avoids the need to install the Renovate GitHub App on every consumer repo.

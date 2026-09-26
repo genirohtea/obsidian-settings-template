@@ -1,0 +1,11 @@
+{
+  "author": "Johan Sanneblad",
+  "authorUrl": "https://github.com/johansan",
+  "description": "Clean up what you paste. Save images into the vault, strip tracking from links, unwrap terminal output, and normalize AI typography.",
+  "fundingUrl": "https://github.com/sponsors/johansan/",
+  "id": "better-paste",
+  "isDesktopOnly": false,
+  "minAppVersion": "1.13.1",
+  "name": "Better Paste",
+  "version": "1.0.17"
+}

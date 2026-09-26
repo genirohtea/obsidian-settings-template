@@ -1,0 +1,11 @@
+{
+  "author": "Developer-Mike",
+  "authorUrl": "https://github.com/Developer-Mike",
+  "description": "Supercharge your canvas experience! Create presentations, flowcharts and more!",
+  "fundingUrl": "https://ko-fi.com/X8X27IA08",
+  "id": "advanced-canvas",
+  "isDesktopOnly": false,
+  "minAppVersion": "1.13.0",
+  "name": "Advanced Canvas",
+  "version": "7.0.1"
+}

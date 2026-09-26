@@ -1,0 +1,11 @@
+{
+  "author": "mdelobelle",
+  "authorUrl": "https://github.com/mdelobelle",
+  "description": "Typed, validated note properties with guided input \u2014 reusable note types, a schema for your frontmatter. Successor to Metadata Menu, powered by Bases.",
+  "fundingUrl": "https://github.com/sponsors/mdelobelle/",
+  "id": "fileclass",
+  "isDesktopOnly": false,
+  "minAppVersion": "1.12.7",
+  "name": "Fileclass",
+  "version": "0.2.15"
+}

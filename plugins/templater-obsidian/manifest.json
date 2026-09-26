@@ -1,7 +1,7 @@
 {
   "author": "SilentVoid",
   "authorUrl": "https://github.com/SilentVoid13",
-  "description": "Create and use templates",
+  "description": "Advanced templating and automation using handlebars-like syntax.",
   "fundingUrl": {
     "GitHub Sponser (SilentVoid13, creator)": "https://github.com/sponsors/SilentVoid13",
     "GitHub Sponser (Zachatoo, maintainer)": "https://github.com/sponsors/Zachatoo",
@@ -11,7 +11,7 @@
   "helpUrl": "https://silentvoid13.github.io/Templater/",
   "id": "templater-obsidian",
   "isDesktopOnly": false,
-  "minAppVersion": "1.12.2",
+  "minAppVersion": "1.13.0",
   "name": "Templater",
-  "version": "2.20.3"
+  "version": "2.25.1"
 }

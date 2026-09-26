@@ -26,28 +26,8 @@
   padding: inherit;
 }
 
-/* warning/error text */
-.qsp-warning {
-  color: var(--text-error);
-}
-
-.qsp-tag {
-  background-color: var(--background-modifier-hover);
-  border-radius: var(--radius-s);
-  font-size: 9px;
-  font-weight: var(--font-semibold);
-  letter-spacing: 0.05em;
-  line-height: var(--line-height-normal);
-  margin-left: var(--size-2-3);
-  padding: 0 var(--size-4-1);
-  text-transform: uppercase;
-  align-self: center;
-}
-
-/* settings panel, indent setting to create visual hierarchy */
-.qsp-setting-item-indent {
-  border: 0px;
-  padding-left: 36px;
+.qsp-hidden {
+  display: none;
 }
 
 /* Jan 2026-fix: Add visual divider when a SettingGroup is followed by a single
@@ -60,16 +40,6 @@
 /* symbol suggestion should align to the left */
 .suggestion-item.qsp-suggestion-symbol {
   justify-content: left;
-}
-
-/* highlight recently used file suggestions */
-.suggestion-item.qsp-recent-file .qsp-title {
-  text-decoration: underline dotted var(--text-muted);
-}
-
-/* highlight currently open editor suggestions */
-.suggestion-item.qsp-open-editor .qsp-title {
-  text-decoration: underline var(--text-accent);
 }
 
 /* highlight the open editor flair icon */
@@ -293,3 +263,10 @@
 
 /* Prompt instructions element for mode triggers */
 .qsp-prompt-instructions-modes {}
+
+/* Error message displayed in the list item entry modal */
+.qsp-list-entry-error {}
+
+/* Descriptive text displayed in the list item entry modal */
+.qsp-list-entry-description {}
+

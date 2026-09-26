@@ -1,4 +1,5 @@
 {
+  "alwaysUpdateLinks": true,
   "attachmentFolderPath": "./",
   "focusNewTab": false,
   "mobileToolbarCommands": [
@@ -27,6 +28,7 @@
   "promptDelete": false,
   "readableLineLength": false,
   "showInlineTitle": false,
-  "showLineNumber": false,
+  "showLineNumber": true,
+  "showUnsupportedFiles": true,
   "useMarkdownLinks": true
 }

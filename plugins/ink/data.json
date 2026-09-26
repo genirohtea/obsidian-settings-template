@@ -1,0 +1,28 @@
+{
+  "customAttachmentFolders": false,
+  "debugLoggingEnabled": false,
+  "dominantHand": "right",
+  "drawingBackgroundWhenLocked": false,
+  "drawingEnabled": true,
+  "drawingFrameWhenLocked": false,
+  "drawingGridEnabledByDefault": true,
+  "drawingSubfolder": "Ink/Drawing",
+  "gettingStartedExpanded": true,
+  "noteAttachmentFolderLocation": "obsidian",
+  "notelessAttachmentFolderLocation": "obsidian",
+  "onboardingTips": {
+    "lastVersionTipRead": "0.5.7",
+    "strokeLimitTipRead": false,
+    "welcomeTipRead": true
+  },
+  "settingsVersion": "0.5.0",
+  "writingBackgroundWhenLocked": true,
+  "writingBufferLines": 3,
+  "writingDynamicStrokeThickness": true,
+  "writingEnabled": true,
+  "writingLineHeight": 150,
+  "writingLinesWhenLocked": true,
+  "writingSmoothing": false,
+  "writingStrokeLimit": 200,
+  "writingSubfolder": "Ink/Writing"
+}

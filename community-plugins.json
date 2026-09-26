@@ -1,18 +1,12 @@
 [
-  "cm-editor-syntax-highlight-obsidian",
   "code-block-copy",
   "custom-sort",
-  "dataview",
   "folder-note-plugin",
-  "metadata-menu",
   "nldates-obsidian",
   "obsidian-advanced-uri",
-  "obsidian-auto-link-title",
   "obsidian-contextual-typography",
-  "obsidian-excalidraw-plugin",
   "obsidian-hider",
   "obsidian-linter",
-  "obsidian-map-view",
   "obsidian-style-settings",
   "periodic-notes",
   "readwise-official",
@@ -20,5 +14,11 @@
   "todoist-sync-plugin",
   "templater-obsidian",
   "obsidian-icon-folder",
-  "darlal-switcher-plus"
+  "darlal-switcher-plus",
+  "better-paste",
+  "fileclass",
+  "pixel-perfect-image",
+  "obsidian-custom-frames",
+  "ink",
+  "maps"
 ]

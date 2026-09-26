@@ -1,0 +1,11 @@
+{
+  "author": "Ellpeck",
+  "authorUrl": "https://ellpeck.de",
+  "description": "Turns web apps into panes using iframes with custom styling. Also comes with presets for Google Keep, Todoist and more.",
+  "fundingUrl": "https://ellpeck.de/support",
+  "id": "obsidian-custom-frames",
+  "isDesktopOnly": false,
+  "minAppVersion": "1.11.0",
+  "name": "Custom Frames",
+  "version": "2.6.0"
+}

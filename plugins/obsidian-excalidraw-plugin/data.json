@@ -1,6 +1,277 @@
 {
   "addDummyTextElement": false,
+  "aiDefaultImageGenerationModel": "dall-e-3",
+  "aiDefaultMaxOutgoingTokens": 0,
+  "aiDefaultMaxResponseTokens": 4096,
+  "aiDefaultTextModel": "gpt-3.5-turbo-1106",
   "aiEnabled": true,
+  "aiImageModelConfigs": {
+    "dall-e-2": {
+      "model": "dall-e-2",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "256x256",
+        "512x512",
+        "1024x1024"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "dall-e-3": {
+      "model": "dall-e-3",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1792x1024",
+        "1024x1792"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": false
+    },
+    "gemini-2.5-flash-image": {
+      "model": "gemini-2.5-flash-image",
+      "providerId": "Google Gemini",
+      "supportedSizes": [
+        "1024x1024",
+        "848x1264",
+        "1264x848",
+        "896x1200",
+        "1200x896",
+        "928x1152",
+        "1152x928",
+        "768x1376",
+        "1376x768",
+        "1584x672"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "gemini-3-pro-image-preview": {
+      "model": "gemini-3-pro-image-preview",
+      "providerId": "Google Gemini",
+      "supportedSizes": [
+        "1024x1024",
+        "2048x2048",
+        "4096x4096",
+        "848x1264",
+        "1696x2528",
+        "3392x5056",
+        "1264x848",
+        "2528x1696",
+        "5056x3392",
+        "896x1200",
+        "1792x2400",
+        "3584x4800",
+        "1200x896",
+        "2400x1792",
+        "4800x3584",
+        "928x1152",
+        "1856x2304",
+        "3712x4608",
+        "1152x928",
+        "2304x1856",
+        "4608x3712",
+        "768x1376",
+        "1536x2752",
+        "3072x5504",
+        "1376x768",
+        "2752x1536",
+        "5504x3072",
+        "1584x672",
+        "3168x1344",
+        "6336x2688"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "gemini-3.1-flash-image-preview": {
+      "model": "gemini-3.1-flash-image-preview",
+      "providerId": "Google Gemini",
+      "supportedSizes": [
+        "512x512",
+        "1024x1024",
+        "2048x2048",
+        "4096x4096",
+        "424x632",
+        "848x1264",
+        "1696x2528",
+        "3392x5056",
+        "632x424",
+        "1264x848",
+        "2528x1696",
+        "5056x3392",
+        "448x600",
+        "896x1200",
+        "1792x2400",
+        "3584x4800",
+        "600x448",
+        "1200x896",
+        "2400x1792",
+        "4800x3584",
+        "464x576",
+        "928x1152",
+        "1856x2304",
+        "3712x4608",
+        "576x464",
+        "1152x928",
+        "2304x1856",
+        "4608x3712",
+        "384x688",
+        "768x1376",
+        "1536x2752",
+        "3072x5504",
+        "688x384",
+        "1376x768",
+        "2752x1536",
+        "5504x3072",
+        "792x168",
+        "1584x672",
+        "3168x1344",
+        "6336x2688",
+        "256x1024",
+        "512x2048",
+        "1024x4096",
+        "2048x8192",
+        "192x1536",
+        "384x3072",
+        "768x6144",
+        "1536x12288",
+        "1024x256",
+        "2048x512",
+        "4096x1024",
+        "8192x2048",
+        "1536x192",
+        "3072x384",
+        "6144x768",
+        "12288x1536"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-1": {
+      "model": "gpt-image-1",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-1-mini": {
+      "model": "gpt-image-1-mini",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-1.5": {
+      "model": "gpt-image-1.5",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "gpt-image-2": {
+      "model": "gpt-image-2",
+      "providerId": "OpenAI",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536",
+        "2048x2048"
+      ],
+      "supportsMaskImageEdits": true,
+      "supportsPromptImageTransforms": true
+    },
+    "grok-imagine-image-pro": {
+      "model": "grok-imagine-image-pro",
+      "providerId": "xAI",
+      "supportedSizes": [
+        "1024x1024"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    },
+    "grok-imagine-image-quality": {
+      "model": "grok-imagine-image-quality",
+      "providerId": "xAI",
+      "supportedSizes": [
+        "1024x1024"
+      ],
+      "supportsMaskImageEdits": false,
+      "supportsPromptImageTransforms": true
+    }
+  },
+  "aiProviderProfiles": {
+    "Anthropic": {
+      "apiKey": "",
+      "baseURL": "https://api.anthropic.com/v1",
+      "provider": "anthropic"
+    },
+    "Google Gemini": {
+      "apiKey": "",
+      "baseURL": "https://generativelanguage.googleapis.com/v1beta",
+      "provider": "google"
+    },
+    "OpenAI": {
+      "apiKey": "",
+      "baseURL": "https://api.openai.com/v1",
+      "provider": "openai"
+    },
+    "OpenAI-compatible": {
+      "apiKey": "",
+      "baseURL": "https://api.openai.com/v1",
+      "provider": "openai-compatible"
+    },
+    "xAI": {
+      "apiKey": "",
+      "baseURL": "https://api.x.ai/v1",
+      "provider": "xai"
+    }
+  },
+  "aiTextModelConfigs": {
+    "claude-sonnet-4-5": {
+      "endpoint": "",
+      "model": "claude-sonnet-4-5",
+      "multimodalSupport": true,
+      "providerId": "Anthropic"
+    },
+    "gemini-2.5-pro": {
+      "endpoint": "",
+      "model": "gemini-2.5-pro",
+      "multimodalSupport": true,
+      "providerId": "Google Gemini"
+    },
+    "gpt-3.5-turbo-1106": {
+      "endpoint": "",
+      "model": "gpt-3.5-turbo-1106",
+      "multimodalSupport": true,
+      "providerId": "OpenAI"
+    },
+    "gpt-5-mini": {
+      "endpoint": "",
+      "model": "gpt-5-mini",
+      "multimodalSupport": true,
+      "providerId": "OpenAI"
+    },
+    "grok-4-fast": {
+      "endpoint": "",
+      "model": "grok-4-fast",
+      "multimodalSupport": true,
+      "providerId": "xAI"
+    }
+  },
+  "aiVerboseLogging": false,
   "allowCtrlClick": true,
   "allowImageCache": true,
   "allowImageCacheInScene": true,
@@ -359,6 +630,7 @@
   "drawingOpenCount": 0,
   "dynamicStyling": "colorful",
   "embedMarkdownCommentLinks": true,
+  "embedPlaceholderImage": true,
   "embedType": "excalidraw",
   "embedUseExcalidrawFolder": false,
   "embedWikiLink": true,
@@ -373,6 +645,8 @@
     "filenameVisible": false,
     "useObsidianDefaults": false
   },
+  "enableCommandLinks": false,
+  "enableOnloadScripts": false,
   "excalidrawMasteryPromoCollapsed": false,
   "experimantalFourthFont": "Virgil",
   "experimentalEnableFourthFont": false,
@@ -398,6 +672,7 @@
   "hoverPreviewWithoutCTRL": false,
   "iframeMatchExcalidrawTheme": true,
   "iframelyAllowed": true,
+  "imageCacheRetentionDays": 30,
   "imageElementNotice": true,
   "isDebugMode": false,
   "isLeftHanded": false,
@@ -416,6 +691,11 @@
     "type": "excalidrawlib",
     "version": 2
   },
+  "libraryFileName": "local-library",
+  "libraryFolderPath": "Excalidraw/Libraries",
+  "libraryMigrationSnoozeUntil": 0,
+  "libraryMigrationStatus": "not-required",
+  "libraryStorageMode": "vault",
   "linkOpacity": 1,
   "linkPrefix": "\ud83d\udccd",
   "loadChineseFonts": false,
@@ -424,6 +704,29 @@
   "loadPropertySuggestions": true,
   "longPressDesktop": 500,
   "longPressMobile": 500,
+  "markdownImageSettings": {
+    "defaults": {
+      "border": {
+        "color": "Black",
+        "enabled": false
+      },
+      "css": "",
+      "fontColor": "Black",
+      "fontFamily": "Virgil",
+      "paddingBottom": 10,
+      "transclusion": {
+        "border": {
+          "color": "Black",
+          "enabled": false
+        },
+        "css": "",
+        "enabled": false,
+        "fontColor": "Black",
+        "fontFamily": "Cascadia"
+      },
+      "width": 500
+    }
+  },
   "markdownNodeOneClickEditing": false,
   "matchTheme": false,
   "matchThemeAlways": false,
@@ -740,6 +1043,7 @@
     }
   ],
   "numberOfCustomPens": 0,
+  "oEmbedAllowed": false,
   "onceOffCompressFlagReset": true,
   "onceOffGPTVersionReset": true,
   "openAIAPIToken": "",
@@ -785,7 +1089,7 @@
   "pngExportScale": 1,
   "previewImageType": "SVGIMG",
   "previewMatchObsidianTheme": false,
-  "previousRelease": "2.22.3",
+  "previousRelease": "2.26.4",
   "rank": "Bronze",
   "removeTransclusionQuoteSigns": true,
   "renderImageInHoverPreviewForMDNotes": false,
@@ -799,11 +1103,13 @@
   "showReleaseNotes": true,
   "showSecondOrderLinks": true,
   "showSplashscreen": true,
+  "showTabTitlebarButtons": true,
   "sidepanelTabs": [],
   "slidingPanesSupport": false,
   "startupScriptPath": "",
   "syncElementLinkWithText": false,
   "syncExcalidraw": false,
+  "tabletFooterSafeAreaPadding": false,
   "tabletUIMode": "compact",
   "taskboneAPIkey": "",
   "taskboneEnabled": false,

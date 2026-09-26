@@ -5,7 +5,7 @@
   "helpUrl": "https://platers.github.io/obsidian-linter/",
   "id": "obsidian-linter",
   "isDesktopOnly": false,
-  "minAppVersion": "1.12.0",
+  "minAppVersion": "1.13.0",
   "name": "Linter",
-  "version": "1.31.2"
+  "version": "1.33.0"
 }

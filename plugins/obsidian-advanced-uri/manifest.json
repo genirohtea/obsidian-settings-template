@@ -1,11 +1,11 @@
 {
   "author": "Vinzent",
   "authorUrl": "https://github.com/Vinzent03",
-  "description": "Advanced modes for Obsidian URI",
+  "description": "Control various aspects through URIs, including opening files, creating new files, and executing commands.",
   "fundingUrl": "https://ko-fi.com/vinzent",
   "id": "obsidian-advanced-uri",
   "isDesktopOnly": false,
-  "js": "main.js",
+  "minAppVersion": "1.5.7",
   "name": "Advanced URI",
-  "version": "1.46.1"
+  "version": "2.2.0"
 }

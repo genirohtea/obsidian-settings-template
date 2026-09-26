@@ -1,11 +1,10 @@
 {
-  "author": "@kepano",
-  "authorUrl": "https://www.twitter.com/kepano",
-  "description": "Hide UI elements such as tooltips, status, titlebar and more",
-  "fundingUrl": "https://www.buymeacoffee.com/kepano",
+  "author": "kepano",
+  "authorUrl": "https://stephango.com/",
+  "description": "Hide UI elements such as tooltips, status, titlebar and more.",
   "id": "obsidian-hider",
   "isDesktopOnly": false,
-  "minAppVersion": "1.11.1",
+  "minAppVersion": "1.13.1",
   "name": "Hider",
-  "version": "1.6.1"
+  "version": "1.7.1"
 }

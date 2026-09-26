@@ -1,5 +1,5 @@
 ---
-# MANAGED BY TEMPLATE (copied 2026-05-10 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
+# MANAGED BY TEMPLATE (copied 2026-09-26 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
 # Test locally using prek run --all-files (or pre-commit run --all-files)
 # This config is consumed by prek (https://github.com/j178/prek), a
 # drop-in Rust replacement for pre-commit. The schema is identical.
@@ -168,4 +168,6 @@ repos:
       - id: tofu_trivy
       - id: tofu_checkov
       - id: tofu_providers_lock
+        args:
+          - --hook-config=--mode=always-regenerate-lockfile
 # END MANAGED TEMPLATE — add custom content below

@@ -1,4 +1,4 @@
-// MANAGED BY TEMPLATE (copied 2026-05-10 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
+// MANAGED BY TEMPLATE (copied 2026-09-26 from 6bed4) — do not edit. Sync from the source template; user must manage overwrites.
 // Renovate replaces Dependabot for this template. It updates GitHub Actions
 // pinned in workflows, pre-commit hook revs, and tool versions in `.mise.toml`.
 // Schema: https://docs.renovatebot.com/renovate-schema.json
@@ -40,6 +40,8 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-non-major",
+      "automerge": true,
+      "automergeType": "pr",
     },
   ],
 }
